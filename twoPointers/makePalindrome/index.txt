@@ -1,0 +1,24 @@
+You are given a string A, of length N.
+
+You have to find the minimum number of adjacent swaps required to make the string palindrome.
+
+If it is impossible, return -1.
+
+
+2
+5
+aabcb
+8
+adbcdbad 
+
+In the first sample test case, the given string is A = "aabcb".
+
+After the first swap, the string becomes -> "abacb".
+
+After the second swap, the string becomes -> "abcab"
+
+After the third swap, the string becomes -> "abcba", which is a palindrome.
+
+So, in 3 adjacent swaps, the string became a palindrome, so the required output is 3.
+
+In the second sample test case, the string cannot be made a palindrome, so the output is -1.
