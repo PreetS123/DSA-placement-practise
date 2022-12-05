@@ -11,7 +11,12 @@ arr=[1,3,4,6,7];
     for(let i=0; i<arr.length; i++){
         let temp=arr[i];
         for(let j=0; j<temp.length; j++){
-               obj[temp[j]]=1;
+            if(obj[temp[j]]===undefined){
+                obj[temp[j]]=1;
+            }else{
+                obj[temp[j]]++;
+            }
+              
         }
     }
     console.log(Object.keys(obj))
