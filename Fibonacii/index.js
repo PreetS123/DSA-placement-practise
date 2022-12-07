@@ -1,17 +1,17 @@
 
 
 function FibonaciiSeries(n){
-  let n1=0;
-  let n2=1;
-  let s=0;
+  let zero=0;
+  let one=1;
+  let sum=0;
   for(let i=1; i<n; i++){
-    s+=n1+n2;
-    n1=n2;
-    n2=s;
+    sum=zero+one;
+    zero=one;
+    one=sum;
   }
-  console.log(s);
+  console.log(sum);
 }
 
 
-let n=7;
+let n=9;
 FibonaciiSeries(n)
