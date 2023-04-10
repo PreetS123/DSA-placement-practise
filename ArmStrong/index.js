@@ -1,13 +1,13 @@
   
    
       function ArmStrong(n){
-        n=n.toString();
-        let len=n.length;
-        let out=0;
-        for(let i=0; i<len; i++){
-          out+= n[i]**len;
-        }
-        out===parseInt(n)?console.log('IT IS AN ARMSTRONG NUMBER'):console.log('NOT AN ARMSTRONG NUMBER');
+         let out=0;
+         n=n.toString();
+         let p=n.length;
+         for(let i=0; i<p; i++){
+            out+=n[i]**p;
+         }
+         out===parseInt(n)?console.log('Arm strong number'):console.log('Not an arm strong number');
       }
-      let n=153;
+      let n=1634;
       ArmStrong(n)
