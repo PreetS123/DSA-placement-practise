@@ -10,13 +10,14 @@ Sample Output 1
 
 
  function MissingInt(arr){
-    n=arr.length;
-     let sum=((n+1)*(n+2))/2;
-     for(let i=0; i<arr.length; i++){
-           sum-=arr[i];
-     }
-     console.log(sum);
+    let s=0;
+    let n=arr.length;
+    let tsum=((n+1)*(n+2))/2;
+    for(let i=0; i<arr.length; i++){
+       s+=arr[i];
+    }
+    console.log(tsum-s);
  }
 
- let arr=[4,5,1,3,6];
+ let arr=[4,5,1,3];
  MissingInt(arr);
