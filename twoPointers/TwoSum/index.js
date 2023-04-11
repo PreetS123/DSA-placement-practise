@@ -1,25 +1,25 @@
 
 
   function TwoSum(n,k,arr){
-    let s=0;
-    let e=n-1;
-    let flag=false;
-    while(s<=e){
+      let out='';
+      let s=0;
+      let e=n-1;
+      let flag=false;
+      while(s<=e){
          if((arr[s]+arr[e])===k){
-          flag=true;
-          break;
-         }
-         else if((arr[s]+arr[e])>k){
+            out=s+' '+e;
+            flag=true;
+            break;
+         }else if((arr[s]+arr[e])>k){
              e--;
-         }else{
-            s++;
+             flag=false;
          }
-    }
-     if(flag===true){
-        console.log(s,e);
-     }else{
-        console.log('-1','-1');
-     }
+         else{
+            s--;
+            flag=false;
+         }  
+      }
+      flag===true?console.log(out):console.log('-1 -1');
   }
 
 
