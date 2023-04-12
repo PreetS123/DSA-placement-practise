@@ -1,23 +1,20 @@
 
 const PalindromeNumber=(num)=>{
-    num=num.toString();
-    let s=0,e=num.length-1;
+    num= num.toString();
+    let s=0; 
+    let e=num.length-1;
     let flag=false;
     while(s<=e){
         if(num[s]==num[e]){
+            flag=true;
             s++;
             e--;
-            flag=true;
         }else{
             flag=false;
             break;
         }
     }
-    if(flag==true){
-        console.log('Palindrome')
-    }else{
-        console.log('Not Palindrome')
-    }
+    flag==true?console.log('Yes'):console.log('No');
 }
  
-PalindromeNumber(1221);
+PalindromeNumber(21212);

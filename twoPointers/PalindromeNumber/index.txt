@@ -1,5 +1,5 @@
 You are given an integernum.
 
-You need to printYesif that integer is a palindrome or else printNo.
+You need to print Yes if that integer is a palindrome or else print No.
 
 A palindrome is a word, number, phrase, or other sequence of characters that reads the same backward as forward,such asmadamorracecar.
