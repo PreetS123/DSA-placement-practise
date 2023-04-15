@@ -1,23 +1,19 @@
 const Palindrome = (str) => {
-  let s = 0;
-   let e = str.length-1;
+  let s=0; 
+  let e=str.length-1;
   let flag = false;
-  while (s <= e) {
-    if (str[s] == str[e]) {
-      s++;
-      e--;
-      flag = true;
-    } else {
-      flag = false;
+  while(s<=e){
+     if(str[s]==str[e]){
+        flag=true;
+        s++;
+        e--;
+     }else{
+      flag=false;
       break;
-    }
+     }
   }
-  if (flag == true) {
-    console.log("YES");
-  } else {
-    console.log("NO");
-  }
+  flag==true?console.log('Palindrome'):console.log('Not a palindrome');
 };
 
-let str = "nrn";
+let str = "nrnk";
 Palindrome(str);
