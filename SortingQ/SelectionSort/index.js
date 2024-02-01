@@ -1,5 +1,7 @@
 /**
  * Selection Sort
+ * Time complexity --> n*n
+ * inner loop runs for n+(n-1)+(n-2)+...whose sum is n(n+1)/2;
  */
 
 function SelectionSort(arr, n) {
@@ -10,14 +12,14 @@ function SelectionSort(arr, n) {
         min = j;
       }
     }
-    let temp = arr[min];
-    arr[min] = arr[i];
-    arr[i] = temp;
+    let temp = arr[i];
+    arr[i] = arr[min];
+    arr[min] = temp;
   }
   return arr;
 }
 
-let arr = [2, 4, 1, 3, 8, 6];
+let arr = [2, 44, 1, 3, 8, 0];
 let n = arr.length;
 
 console.log(SelectionSort(arr, n));
