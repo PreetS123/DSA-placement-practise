@@ -1,13 +1,13 @@
 function FibonaciiSeries(n) {
   let f = 0;
   let s = 1;
-  let sun = 0;
+  let sum = 0;
   for (let i = 1; i < n; i++) {
-    sun = s + f;
+    sum = f + s;
     f = s;
-    s = sun;
+    s = sum;
   }
-  console.log(sun);
+  console.log(sum);
 }
 
 let n = 9;
